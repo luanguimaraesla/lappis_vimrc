@@ -36,7 +36,9 @@ set paste
 " colorscheme delek
 " colorscheme desert
 " colorscheme PaperColor
-colorscheme default
+" colorscheme default
+colorscheme badwolf
+
 
 " Set background type
 set background=dark
@@ -45,7 +47,7 @@ set background=dark
 " set statusline=%(%F%m%r%h%w\ [%Y]\ %{&encoding}\ %)%=%(%l,%v\ %LL\ %p%%%)
 set laststatus=2
 set linespace=0
-" let g:airline_theme = 'badwolf'"let g:airline_theme = 'wombat'
+" let g:airline_theme = 'badwolf'
 let g:airline_theme = 'wombat'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
@@ -90,6 +92,7 @@ set cursorline
 " hi CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=Yellow
 
 ""------------ Mappings --------------"
+
 "" Create tree navigation
 autocmd VimEnter * if exists(":Lexplore") | exe "map <C-n> :Lexplore <CR>" | else | exe "map <C-n> :Vexplore <CR>" | endif
 
@@ -99,3 +102,10 @@ let g:netrw_sort_sequence = '[\/]$,*'
 let g:netrw_banner = 0
 let g:netrw_winsize = -28
 let g:netrw_list_hide= '.*\.swp$'
+
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+
+" easymotion bidirecional
+nmap s <Plug>(easymotion-s)
