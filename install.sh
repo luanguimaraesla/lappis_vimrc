@@ -32,8 +32,12 @@ fi
 echo
 echo "Fonts installed into $font_dir"
 
+
+echo
+echo "Installing CLANG completer dependencies"
+sudo apt-get install cmake
+sudo apt-get install python-dev libxml2-dev libxslt-dev
+
 echo
 echo "Configuring CLANG completer"
-
-sudo apt-get install cmake
 . ~/.vim/bundle/YouCompleteMe/install.py --clang-completer
