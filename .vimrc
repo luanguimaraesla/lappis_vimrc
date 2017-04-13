@@ -40,6 +40,9 @@ set paste
 colorscheme badwolf
 
 
+" Hidden buffers
+set hidden
+
 " Set background type
 set background=dark
 
